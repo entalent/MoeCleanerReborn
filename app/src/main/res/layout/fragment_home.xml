@@ -1,0 +1,70 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragment.HomeFragment">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="60dp"
+        android:id="@+id/relativeLayout"
+        android:layout_gravity="center">
+
+        <cn.edu.bit.cs.moecleaner.ui.customview.CircleProgressBar
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:id="@+id/view2"
+            app:main_title_size="20dp"
+            app:sub_title_size="16dp"
+            app:sub_title="@string/text_storage_usage"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+
+            android:layout_centerVertical="true"
+            app:center_circle_color="@color/colorPrimaryDark"
+            app:progress_arc_Color="@color/colorAccent"/>
+
+        <cn.edu.bit.cs.moecleaner.ui.customview.CircleProgressBar
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:id="@+id/view3"
+            app:main_title_size="16dp"
+            app:sub_title="@string/text_memory_usage"
+
+            app:center_circle_color="@color/colorPrimary"
+            app:progress_arc_Color="@color/colorAccent"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/view2"
+            android:layout_toEndOf="@+id/view2" />
+
+        <cn.edu.bit.cs.moecleaner.ui.customview.CircleProgressBar
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/view4"
+            app:main_title_size="12dp"
+            app:sub_title_size="18dp"
+            app:main_title="@string/text_cpu_usage"
+            android:layout_below="@+id/view3"
+            android:layout_alignLeft="@+id/view3"
+            android:layout_alignStart="@+id/view3"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            app:center_circle_color="@color/colorAccent"
+            app:progress_arc_Color="@color/colorPrimaryDark"/>
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
+</ScrollView>

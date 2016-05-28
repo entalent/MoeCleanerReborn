@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="cn.edu.bit.cs.moecleaner.AppManageActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout2"
+        android:visibility="gone">
+
+        <com.gc.materialdesign.views.ButtonRectangle
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/view1"
+            android:text="Button"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <com.gc.materialdesign.views.ButtonRectangle
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/view2"
+            android:text="Button"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <com.gc.materialdesign.views.ButtonRectangle
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/view3"
+            android:text="Button"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/textView26"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="8dp"/>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView2"
+        android:layout_below="@+id/textView26"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/linearLayout3" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout3">
+
+        <com.gc.materialdesign.views.ButtonRectangle
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_uninstall"
+            android:layout_alignBottom="@+id/linearLayout3"
+            android:layout_alignLeft="@+id/textView26"
+            android:layout_alignStart="@+id/textView26"
+            android:layout_weight="1"
+            android:text="@string/btn_text_uninstall"
+            android:background="@color/colorAccent"
+             />
+        <com.gc.materialdesign.views.ButtonRectangle
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_backup"
+            android:layout_alignBottom="@+id/linearLayout3"
+            android:layout_alignLeft="@+id/textView26"
+            android:layout_alignStart="@+id/textView26"
+            android:layout_weight="1"
+            android:text="@string/btn_text_backup"
+             />
+    </LinearLayout>
+
+    <com.gc.materialdesign.views.ProgressBarIndeterminate
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:id="@+id/progressBar"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:visibility="visible" />
+
+</RelativeLayout>
